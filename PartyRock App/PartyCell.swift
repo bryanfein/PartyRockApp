@@ -29,7 +29,7 @@ class PartyCell: UITableViewCell {
         if let url = URL(string: partyRock.imageURL) {
         
         //Can change Main to Gobal
-        DispatchQueue.global().async {
+        DispatchQueue.global().async { //using a background thread to download the images
             do {
                 let data = try Data(contentsOf: url) //we have the data
                 DispatchQueue.main.async  { //now throw it on the user interface

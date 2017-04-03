@@ -160,14 +160,30 @@
                                     <constraint firstAttribute="height" constant="176" id="10B-4E-L5J"/>
                                 </constraints>
                             </webView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gTG-JP-jNI">
+                                <rect key="frame" x="16" y="184" width="343" height="71"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="71" id="cJr-ZM-w1D"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="8nD-0l-xjM" firstAttribute="top" secondItem="ocC-Er-8y2" secondAttribute="top" id="FRK-QQ-R0p"/>
+                            <constraint firstItem="gTG-JP-jNI" firstAttribute="leading" secondItem="ocC-Er-8y2" secondAttribute="leadingMargin" id="Ppg-4B-nZy"/>
+                            <constraint firstItem="gTG-JP-jNI" firstAttribute="trailing" secondItem="ocC-Er-8y2" secondAttribute="trailingMargin" id="Wx6-o2-KON"/>
                             <constraint firstAttribute="trailing" secondItem="8nD-0l-xjM" secondAttribute="trailing" id="g7A-uG-6aT"/>
                             <constraint firstItem="8nD-0l-xjM" firstAttribute="leading" secondItem="ocC-Er-8y2" secondAttribute="leading" id="k4U-h5-23d"/>
+                            <constraint firstItem="gTG-JP-jNI" firstAttribute="top" secondItem="8nD-0l-xjM" secondAttribute="bottom" constant="8" id="xxY-Kz-24D"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="titleLabel" destination="gTG-JP-jNI" id="V7V-Vq-62e"/>
+                        <outlet property="webview" destination="8nD-0l-xjM" id="eNt-9f-RzB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wLz-N2-umz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
